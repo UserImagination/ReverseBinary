@@ -1,14 +1,16 @@
-//
-//  main.cpp
-//  ReverseBinary
-//
-//  Created by Joseph Craig on 2/17/24.
-//
-
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+    int x = 0;
+    
+    cin >> x;
+    
+    while (x > 0) {
+        cout << x % 2;
+        x /= 2;
+    }
+    cout << endl;
     return 0;
 }
+
